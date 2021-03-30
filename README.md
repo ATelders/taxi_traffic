@@ -1,5 +1,7 @@
 #project_template
 
+Team Arthur Tanguy
+
 The file environment.yml contains the list of all packages needed for the anaconda environment.
 
 To recreate the same environment, type :
