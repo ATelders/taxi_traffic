@@ -7,7 +7,7 @@ The file environment.yml contains the list of all packages needed for the anacon
 To recreate the same environment, type :
     conda env create -f environment.yml
 
-Activate conda environment
+Activate conda environment :
     conda activate env
 
 To install a package, type :
