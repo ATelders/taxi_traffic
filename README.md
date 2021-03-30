@@ -10,3 +10,5 @@ To install a package, type :
 
 To save the environment after installing packages, type :
     conda env export > environment.yml
+
+test
