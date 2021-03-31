@@ -1,6 +1,9 @@
+import sys
+sys.path.insert(0, '/home/apprenant/simplon_projects/taxi_traffic/')
 from src.d00_utils.compute_distance import compute_distance
 from src.d01_data.load_data import df
 import pandas as pd
+
 
 # On ajoute une colonne dans laquelle on ajoute la distance en km
 df["distance"] = df[['pickup_longitude', 'pickup_latitude', 'dropoff_longitude', 'dropoff_latitude']].apply(
@@ -20,4 +23,4 @@ df['day_name'] = df['pickup_datetime'].dt.day_name()
 df['day_no'] = df['pickup_datetime'].dt.dayofweek
 
 # On exporte nos données traitées
-df.to_csv('/home/apprenant/PycharmProjects/taxi_traffic/data/intermediate_train.csv')
+df.to_csv('/home/apprenant/simplon_projects/taxi_traffic/data/intermediate_train.csv')
