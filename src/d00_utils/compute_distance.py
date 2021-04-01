@@ -36,7 +36,7 @@ def time_slot(hour):
     slot = list(range(0, 28, 4))
     for i in range(len(slot)-1):
         if hour <= slot[i+1]:
-            return str([slot[i], slot[i+1]])
+            return (slot[i], slot[i+1])
 
 
 
