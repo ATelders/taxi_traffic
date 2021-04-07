@@ -2,18 +2,10 @@
 
 Team Arthur Tanguy
 
-The file environment.yml contains the list of all packages needed for the anaconda environment.
 
-To recreate the same environment, type :
-    conda env create -f environment.yml
+load_data.py loads the data
+intermediate.py is does data cleaning and gives relevant insights on the data
 
-Activate conda environment :
-    conda activate env
-
-To install a package, type :
-    conda install <package>
-
-To save the environment after installing packages, type :
-    conda env export > environment.yml
-
-test
+notebooks folder :
+    initial-data-exploration.ipynb 
+    multiple-linear-regression.ipynb
