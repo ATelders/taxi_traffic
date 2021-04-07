@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, '/home/apprenant/PycharmProjects/taxi_traffic/')
+sys.path.insert(0, '/home/apprenant/simplon_projects/taxi_traffic/')
 from src.d00_utils.compute_distance import compute_distance, time_slot
 from src.d01_data.load_data import df
 import pandas as pd
@@ -42,4 +42,4 @@ km_count_by_weekday = df.groupby(by=["day_no"])['distance'].sum().values
 
 # Export data
 # We chose csv over sql because we only use one table
-df.to_csv('/home/apprenant/PycharmProjects/taxi_traffic/data/intermediate_train.csv')
+df.to_csv('/home/apprenant/simplon_projects/taxi_traffic/data/intermediate_train.csv')
